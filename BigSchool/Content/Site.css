@@ -1,4 +1,25 @@
-﻿body {
+﻿/*Course layout*/
+.course {
+    list-style:none;
+}
+.course > li{
+    position: relative;
+    margin-bottom: 30px;
+}
+.course > li .date{
+    text-align: center;
+    background-color:#d41d50;
+    color: white;
+    width: 60px;
+    border-radius: 8px;
+}
+.course > li > .details{
+    position:absolute;
+    top:0;
+    left: 70px;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -12,6 +33,10 @@
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
+.navbar-inverse {
+    background-color: #18f8f8;
+    border-color: #080808;
+}
 .dl-horizontal dt {
     white-space: normal;
 }
